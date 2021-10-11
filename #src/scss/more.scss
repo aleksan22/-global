@@ -1,0 +1,17 @@
+.more{
+    &__img{
+        width: 100%;
+        padding-top: 8em;
+    }
+    &__text{
+        margin-left: 50%;
+        margin-top: 10em;
+        margin-bottom: 12em;
+
+        font-size: 16px;
+        line-height: 21px;
+        color: #000;
+        font-weight: 400;
+        font-family: var(--font);
+    }
+}

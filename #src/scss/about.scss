@@ -1,0 +1,110 @@
+.who{
+    padding-top: 10em;
+    padding-bottom: 13.7em;
+    position: relative;
+   &::after{
+            position: absolute;
+            
+            content: '';
+            height: 1px;
+            width: 100%;
+            background: #E2E3E7;
+            bottom: 10.7em;
+            left: 0;
+        }
+    
+    &__title{
+        font-size: 54px;
+        line-height: 59px;
+        font-family: var(--font);
+        color: #000;
+        font-weight: 400;
+    }
+    &__inner{
+        display: flex;
+        margin-bottom: 6.3em;
+    }
+    &__img{
+        margin-right: 6.9em;
+    }
+    
+    &__list-title{
+        font-family: var(--font);
+        margin-bottom: 2.5em;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #000;
+    }
+    &__list-item{
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 2.5em;
+    }
+    &__list-text{
+        font-size: 16px;
+        line-height: 21px;
+        color: #000;
+        font-weight: 500;
+        font-family: var(--font);
+
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    &__list-marker{
+        margin-right: 13px;
+    }
+}
+
+.description{
+    
+    &__text{
+        margin-bottom: 5em;
+        font-weight: 500;
+    font-size: 39px;
+    line-height: 38px;
+    font-family: var(--font);
+    color: #000;
+    }
+    &__btn{
+        border: none;
+        outline: none;
+        background: none;
+
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #000;
+        font-family: var(--font);
+
+        position: relative;
+
+        cursor: pointer;
+
+        margin-bottom: 10em;
+        &::after{
+        content: '';
+        height: 1px;
+        background: #DDDDDD;
+        position: absolute;
+        max-width: 12.3em;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        }
+    }
+    &__img{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    &__row-item{
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        font-family: var(--font);
+        color: #000;
+
+        padding-bottom: 10em;
+    }
+}
