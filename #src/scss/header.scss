@@ -41,4 +41,21 @@
 
         margin-bottom: 17.8em;
     }
+    @media (max-width: 767px){
+        .header__title{
+            font-size: 1.7em;
+            font-family: var(--font);
+            font-weight: 400;
+            color: #000;
+            line-height: 1.1;
+            margin-bottom: 2em;
+        }
+        .header__text{
+            color: #000;
+            font-family: "DM Sans",sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.1;
+        }
+    }
 }

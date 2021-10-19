@@ -23,6 +23,26 @@
         line-height: 59px;
         color: #000;
     }
+    @media (max-width: 767px){
+        .global__title{
+            font-family: var(--font);
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #000;
+        }
+        .global__card{
+            max-width: 370px;
+            margin-left: auto;
+            margin-right: auto;
+            &::before{
+                display: none;
+            }
+        }
+        .global__card-title{
+            margin-bottom: 3em;
+        }
+    }
     &__scroll{
         font-family: var(--font);
         font-weight: 500;
