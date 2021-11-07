@@ -12,10 +12,8 @@
     <title>Global__ITA</title>
 </head>
 <body>
-    
+   <div class="wrapper">
 @@include("_header.html")
-
-
     <section class="global">
 <div class="container">        
         
@@ -76,8 +74,8 @@
             </div>
             </div>
         </div>
-        </div>
-    </div>
+
+
     </section>
 <section class="map">
     <div class="container">
@@ -87,7 +85,7 @@
             </h2>
         </div>
         <div class="row">
-            <a href="#" class="map__link col-1">
+            <a href="#" class="map__link col-1 col-sm-5">
                 About us
             </a>
         </div>
@@ -100,12 +98,12 @@
 <section class="popup">
     <div class="container">
         <div class="row">
-            <h3 class="popup__title col-4">
+            <h3 class="popup__title col-7 col-sm-7 col-md-7 col-lg-5">
                 European TA Conference in Bratislava, Slovakia in 2019 the globalTA network was officially launched. 
             </h3>
         </div>
         <div class="row">
-            <div class="popup__open col-4">
+            <div class="popup__open col-7 col-sm-7 col-md-7 col-lg-5">
             <button class="popup__btn">
                     <img src="img/button.png" alt="" class="popup__img">
             </button>
@@ -116,8 +114,22 @@
         </div>
     </div>
 </section>
-
+<div class="modal__window">
+    <div class="container">
+        <div class="row justify-content-center">
+        <div class="modal__window-content">
+            <button class="modal__close col-xl-1 col-xxl-1 col-lg-1 col-md-2">
+                <img src="img/modal__close.png" width="25px" height="25px">
+            </button>
+            <div class="modal__content col-xl-8 col-xxl-8 col-lg-8 col-md-10 col-sm-12"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9EZ9D7Fns9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 @@include("_footer.html")
     <script src="js/script.js"></script>
+</div>
 </body>
 </html>

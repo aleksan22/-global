@@ -1,6 +1,7 @@
 .header{
     background: url('../img/bg.jpg') center;
     padding-top: 4.6em;
+    
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -57,5 +58,22 @@
             font-size: 1rem;
             line-height: 1.1;
         }
+    }
+}
+.header__btn{
+    outline: none;
+    border: none;
+    background: none;
+    display: none;
+}
+@media (max-width: 767px){
+    .header__list{
+        display: none;
+    }
+    .header__btn{
+        outline: none;
+        border: none;
+        background: none;
+        display: block;
     }
 }

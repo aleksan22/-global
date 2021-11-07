@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>About</title>
 </head>
 <body>
-    <main class="about">
+    
+    <div class="wrapper">
         <section class="about__inner">
             
                 <header class="about__header">
-                    <div class="container col-md-12">
+                    @@include('_menu__phone.html')
+                    <div class="container">
                         <div class="row">
                             <div class="header__inner">
+                                
                         <div class="header__img col-md-1">
                             <img class="header__logo" src="img/logo.svg" alt="">
                         </div>
@@ -46,10 +50,14 @@
                                     </a>
                                 </li>
                             </ul>
+                            <button class="header__btn">
+                                <img src="img/menu.svg" alt="" class="header__btn-icon">
+                            </button>
                         </div>
                         </div>
+                        <div class="container">
                         <div class="row">
-                            <h1 class="header__title col-md-7">
+                            <h1 class="header__title col-md-7 col-xxl-7">
                                 About us
                             </h1>
                             <div class="row">
@@ -61,12 +69,13 @@
                         </div>
                         </div>
                     </div>
+                    </div>
                 </header>
-            </div>
+            
         </section>
         
-        <img src="img/about.png" alt="" class="about__img">
-    
+    <section class="img">
+</section>
     <section class="who">
         <div class="container">
             <div class="row">
@@ -159,7 +168,10 @@
             </div>
         </div>
     </section>
-    </main>
+    
     @@include("_footer.html")
+    
+    <script src="js/script.js"></script>
+</div>
 </body>
 </html>

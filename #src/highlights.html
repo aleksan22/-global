@@ -8,6 +8,8 @@
     <title>Highlights</title>
 </head>
 <body>
+    <div class="wrapper">
+        @@include('_menu__phone.html')
     <div class="container col-12">
         <div class="row">
             <div class="header__inner">
@@ -42,6 +44,9 @@
                     </a>
                 </li>
             </ul>
+            <button class="header__btn">
+                <img src="img/menu.svg" alt="" class="header__btn-icon">
+            </button>
         </div>
         </div>
         <div class="row col-12">
@@ -54,9 +59,9 @@
 </header>
 <section class="highlights">
     <div class="container">
-        <div class="row">
-            <div class="global__cards">
-                <div class="global__card col-4">
+        <div class="row justify-content-center">
+            <div class="global__cards col-12">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">03.05.2021</data>
                     <h3 class="global__card-title">
                         5th European TA Conference on 20-23 March 2022!
@@ -69,7 +74,7 @@
                     </a>
                 </div>
 
-                <div class="global__card col-4">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">04.05.2021</data>
                     <h3 class="global__card-title">
                         How new technologies Impact our life
@@ -82,7 +87,7 @@
                     </a>
                 </div>
 
-                <div class="global__card col-4">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">08.07.2021</data>
                     <h3 class="global__card-title">
                         5th European TA Conference on 20-23 March 2022!
@@ -98,8 +103,8 @@
         </div>
 
         <div class="row">
-            <div class="global__cards">
-                <div class="global__card col-4">
+            <div class="global__cards col-12">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">03.05.2021</data>
                     <h3 class="global__card-title">
                         5th European TA Conference on 20-23 March 2022!
@@ -112,7 +117,7 @@
                     </a>
                 </div>
 
-                <div class="global__card col-4">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">04.05.2021</data>
                     <h3 class="global__card-title">
                         How new technologies Impact our life
@@ -125,7 +130,7 @@
                     </a>
                 </div>
 
-                <div class="global__card col-4">
+                <div class="global__card col-md-3 col-lg-3">
                     <data class="global__card-data col-1">08.07.2021</data>
                     <h3 class="global__card-title">
                         5th European TA Conference on 20-23 March 2022!
@@ -142,5 +147,7 @@
     </div>
 </section>
     @@include("_footer.html")
+    <script src="js/script.js"></script>
+</div>
 </body>
 </html>

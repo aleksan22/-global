@@ -1,6 +1,12 @@
-body {
+body,
+html {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
 }
 
 :root {
@@ -1035,6 +1041,49 @@ body {
   padding-left: 3rem !important;
 }
 
+.aside {
+  background: #e9ecef;
+  max-width: 320px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.aside.aside__close {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.aside__head {
+  float: right;
+  padding-top: 60px;
+}
+
+.aside__body {
+  margin-top: 80px;
+}
+
+.aside__body-item {
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.aside__body-link {
+  text-decoration: none;
+  font-family: var(--font);
+  font-weight: 500;
+  color: #555;
+  font-size: 18px;
+}
+
 .header {
   background: url("../img/bg.jpg") center;
   padding-top: 4.6em;
@@ -1094,6 +1143,13 @@ body {
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 17.8em;
+}
+
+.header__btn {
+  outline: none;
+  border: none;
+  background: none;
+  display: none;
 }
 
 .global {
@@ -1201,8 +1257,7 @@ body {
   color: #000;
   max-width: 352px;
   width: 100%;
-  max-height: 45px;
-  height: 100%;
+  min-height: 45px;
   margin-bottom: 7em;
 }
 
@@ -1458,8 +1513,10 @@ body {
   padding-bottom: 10em;
 }
 
-.about__img {
-  width: 100%;
+.img {
+  background: url("../img/about.png");
+  width: auto;
+  height: 20vh;
 }
 
 .description__img {
@@ -1669,6 +1726,64 @@ body {
   line-height: 21px;
   color: #000;
   font-family: var(--font);
+}
+
+.modal__window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal__window.active {
+  display: block;
+}
+
+.modal__content {
+  padding-top: 20%;
+}
+
+.modal__window-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+/*.modal__content{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}*/
+
+.modal__close {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*position: absolute;
+left: 70%;
+top: 30%;*/
+
+.modal__close-img {
+  width: 25px;
+  height: 25px;
+}
+
+.modal__open {
+  overflow: hidden;
 }
 
 .footer {
@@ -6459,6 +6574,17 @@ body {
     line-height: 1.1;
   }
 
+  .header__list {
+    display: none;
+  }
+
+  .header__btn {
+    outline: none;
+    border: none;
+    background: none;
+    display: block;
+  }
+
   .global .global__title {
     font-family: var(--font);
     font-weight: 400;
@@ -6567,6 +6693,32 @@ body {
     margin-bottom: 1.7em;
   }
 
+  .global__cards {
+    display: block;
+  }
+
+  .global__title {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #000;
+  }
+
+  .global__card {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .global__card::before {
+    display: none;
+  }
+
+  .global__card-title {
+    margin-bottom: 3em;
+  }
+
   .footer .footer__block-title {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -6581,6 +6733,16 @@ body {
     font-size: 1rem;
     color: #000;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 990px) {
+  .modal__close {
+    display: none;
+  }
+
+  .modal__content {
+    padding-top: 50%;
   }
 }
 
@@ -6632,6 +6794,7 @@ body {
 @supports (-webkit-appearance:none){
 .header{background:url("../img/bg.jpg") center}
 .popup{background:url(../img/bg2.png) no-repeat}
+.img{background:url("../img/about.png")}
 }
 
  @media (min-width: 576px){
@@ -6675,6 +6838,14 @@ body {
 }
 
  @media (max-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 576px) and (max-width: 990px){
 
 @supports (-webkit-appearance:none){
 

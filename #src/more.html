@@ -8,6 +8,8 @@
     <title>More</title>
 </head>
 <body>
+    <div class="wrapper">
+        @@include('_menu__phone.html')
     <div class="container col-12">
         <div class="row">
             <div class="header__inner">
@@ -17,12 +19,12 @@
            
             <ul class="header__list col-6">
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="about.html" class="header__list-link">
                         About us
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="members.html" class="header__list-link">
                         Members
                     </a>
                 </li>
@@ -32,16 +34,19 @@
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="highlights.html" class="header__list-link">
                         Highlights
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="contact.html" class="header__list-link">
                         Contact
                     </a>
                 </li>
             </ul>
+            <button class="header__btn">
+                <img src="img/menu.svg" alt="" class="header__btn-icon">
+            </button>
         </div>
         </div>
         <div class="row col-12">
@@ -64,8 +69,9 @@
         </div>
     </div>
 </section>
-
+</div>
 
     @@include('_footer.html')
+    <script src="js/script.js"></script>
 </body>
 </html>

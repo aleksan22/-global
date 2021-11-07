@@ -1,0 +1,35 @@
+.aside{
+    
+    background: #e9ecef;
+    max-width: 320px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    z-index: 3;
+    transition: .4s;
+    height: 100vh;
+    overflow-y: hidden;
+    &.aside__close{
+        transform: translateX(100%);
+    }
+    &__head{
+        float: right;
+        padding-top: 60px;
+    }
+    &__body{
+        margin-top: 80px;
+    }
+    &__body-item{
+        margin-bottom: 40px;
+        list-style-type: none;
+    }
+    &__body-link{
+        text-decoration: none;
+        font-family: var(--font);
+        font-weight: 500;
+        color: #555;
+        font-size: 18px;
+    }
+}

@@ -8,14 +8,22 @@
     font-style: #{$style};
     }
     }
-body{
+
+body, html{
     margin: 0;
     padding: 0;
+}
+.wrapper{
+    overflow-x: hidden;
+    position: relative;
 }
 
 @import 'fonts';
 @import '../bootstrap/bootstrap-grid.scss';
 @import '../../node_modules/include-media/dist/include-media';
+
+
+@import 'menu__phone';
 
 @import 'header';
 
@@ -26,6 +34,7 @@ body{
 @import 'more';
 @import 'contact';
 @import 'link';
+@import 'modal';
 
 @import 'footer';
 // Чтобы подключить слайдер, сначала подключаем slick-theme.scss, а потом slick.scss

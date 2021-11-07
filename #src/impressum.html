@@ -8,55 +8,62 @@
     <title>Impressum</title>
 </head>
 <body>
-    <div class="container col-12">
+    <div class="wrapper">
+        @@include('_menu__phone.html')
+    <div class="container">
+        
         <div class="row">
+            
             <div class="header__inner">
-        <div class="header__img col-1">
+                
+        <div class="header__img col-1 col-sm-3 col-md-3 col-lg-3">
             <img class="header__logo" src="img/logo.svg" alt="">
         </div>
            
             <ul class="header__list col-6">
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="about.html" class="header__list-link">
                         About us
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="members.html" class="header__list-link">
                         Members
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="impressum.html" class="header__list-link">
                         What is TA?
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="highlights.html" class="header__list-link">
                         Highlights
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-link">
+                    <a href="contact.html" class="header__list-link">
                         Contact
                     </a>
                 </li>
             </ul>
+            <button class="header__btn">
+                <img src="img/menu.svg" alt="" class="header__btn-icon">
+            </button>
         </div>
         </div>
-        <div class="row col-12">
-            <h1 class="header__title col-7">
+        <div class="row">
+            <h1 class="header__title col-sm-3 col-md-3 col-lg-5">
                 Impressum
             </h1>
         </div>
         <div class="row">
-            <div class="col-7"></div>
-            <div class="header__text col-5">
+            <div class="col-lg-5 col-md-6 col-sm-7"></div>
+            <div class="header__text col-lg-7 col-md-6 col-sm-5">
                 <h3 class="header__text-title">
                     Responsible for the content and
-current contact person of the globalTA network: 
+                    current contact person of the globalTA network: 
                 </h3>
-                
                     <div class="header__text-name">
                         Dr. Miltos Ladikas<br>
                         Institute for Technology Assessment and Systems Analysis (ITAS) at Karlsruhe Institute for Technology (KIT)<br>
@@ -81,6 +88,9 @@ current contact person of the globalTA network:
                 </div>
             </div>
         </div>
-    @@include("_footer.html");
+        </div>
+    </div>
+    @@include("_footer.html")
+    <script src="js/script.js"></script>
 </body>
 </html>
